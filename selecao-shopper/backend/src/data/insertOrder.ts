@@ -1,4 +1,4 @@
-/* import { order } from "../entities/Class"
+import { order } from "../entities/Class"
 import { connection } from "./connections"
 
 export default async function insertOrder(
@@ -10,5 +10,5 @@ export default async function insertOrder(
             {
                 order
             }
-        ).into('Shopper')
-} */
+        ).into('Orders')
+} 

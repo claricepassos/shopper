@@ -1,6 +1,6 @@
-/* import { v4 } from "uuid";
+import { v4 } from "uuid";
 
 export class IdGenerator {
-  // constructor(){}
+   constructor(){}
   generateId = (): string => v4()
-} */
+} 
