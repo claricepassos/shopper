@@ -1,4 +1,4 @@
-import { product } from "../entities/Class";
+import { Product } from "../entities/Class";
 import { connection } from "./connections"
  
 
