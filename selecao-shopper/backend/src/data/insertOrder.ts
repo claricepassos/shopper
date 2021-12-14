@@ -1,14 +1,14 @@
-import { Client_Order, Order } from "../entities/Class"
+import { Order, Products_list } from "../entities/Class"
 import { connection } from "./connections"
 
 export default async function insertOrder(
-    client_order: Client_Order,
-    order: Order
+    order: Order,
+    products_list: Products_list
 
 ) {
     await connection("orders").insert(order)
   
-    await connection("client_order").insert(client_order)
+    await connection("products_list").insert(products_list)
 
 } 
 

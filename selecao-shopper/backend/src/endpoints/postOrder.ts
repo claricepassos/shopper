@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import insertOrder from '../data/insertOrder';
-import { Client_Order, Order } from '../entities/Class';
+import { Order, Products_list } from '../entities/Class';
+
 import { IdGenerator } from '../services/idGenerator';
 
 
@@ -12,7 +13,7 @@ export default async function postOrder(
 
     const { name, delivery_date, orders } = req.body
 
-    const { product_quantity, products_id, order_id } = req.body
+    const { product_quantity, products_id } = req.body
     
     try {
         if (
@@ -27,10 +28,10 @@ export default async function postOrder(
 
     const id: string = new IdGenerator().generateId()
 
-    const newOrder: Client_Order = {id, name, delivery_date, orders}
+    const newOrder: Order = {id, name, delivery_date, orders}
 
 
-    const newProductOrder: Order = {product_quantity, products_id, order_id}
+    const newProductOrder: Products_list = {product_quantity, products_id}
 
     await insertOrder(
             newOrder,

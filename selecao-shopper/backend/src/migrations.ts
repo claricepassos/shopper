@@ -9,18 +9,18 @@ connection
       qty_stock INT
    );
  
-      CREATE TABLE IF NOT EXISTS client_order(
+      CREATE TABLE IF NOT EXISTS order(
          id VARCHAR(255) PRIMARY KEY,
          name VARCHAR(255) NOT NULL,
          delivery_date VARCHAR(255)
       );
 
-      CREATE TABLE IF NOT EXISTS orders(
+      CREATE TABLE IF NOT EXISTS product_list(
          product_quantity INT, 
          products_id VARCHAR(255),
          FOREIGN KEY (products_id) REFERENCES products(id),
-         order_id VARCHAR(255),
-         FOREIGN KEY (order_id) REFERENCES client_order(id)
+  /*        order_id VARCHAR(255),
+         FOREIGN KEY (order_id) REFERENCES client_order(id) */
 
       );
    `)
