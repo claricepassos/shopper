@@ -1,45 +1,37 @@
 import { Request, Response } from 'express';
-import insertOrder from '../data/insertOrder';
+import insertProductOrder from '../data/insertProductOrder';
 import { Client_Order, Order } from '../entities/Class';
 import { IdGenerator } from '../services/idGenerator';
 
 
-export default async function postOrder(
+export default async function postProductOrder(
 
     req: Request,
     res: Response
 ) {
 
-    const { name, delivery_date, orders } = req.body
 
     const { product_quantity, products_id, order_id } = req.body
     
-    try {
+   try {
         if (
-            !name ||
-            !delivery_date ||
-            !orders
+            !product_quantity ||
+            !products_id ||
+            !order_id
         ) {
             res.status(400).send({
                 message: 'Preencha todos os campos!'
             })
         } 
 
-    const id: string = new IdGenerator().generateId()
+    const newProductOrder: Order = {products_id, product_quantity, order_id}
 
-    const newOrder: Client_Order = {id, name, delivery_date, orders}
-
-
-    const newProductOrder: Order = {product_quantity, products_id, order_id}
-
-    await insertOrder(
-            newOrder,
+    await insertProductOrder(
             newProductOrder
         )
         res
             .status(200).send({
                 message: 'Ordem criado com sucesso!',
-                newOrder,
                 newProductOrder
             })
 
@@ -53,3 +45,4 @@ export default async function postOrder(
 
 }
 
+ 
