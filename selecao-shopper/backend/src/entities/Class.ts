@@ -5,15 +5,14 @@ export interface Product{
     qty_stock: number
   }
 
-export interface Client_Order {
+export interface Order {
   id: string,
   name: string,
   delivery_date: string,
-  orders:Order[]
+  orders: Products_list[]
 }
 
-export interface Order{
+export interface Products_list{
   product_quantity: number,
   products_id: string,
-  order_id: string
 }
