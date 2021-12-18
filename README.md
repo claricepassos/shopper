@@ -1,23 +1,23 @@
-# Backend para seleção de desenvolvedor full-stack Shopper
+<h1>Backend para seleção de desenvolvedor full-stack Shopper</h1>
 
-Como usar:
-1-Git Clone
-2- Cd backend
-3- npm install
-4- criar .end
-5 - npm run migrations
-6 -npm run dev
+<h2>Como usar:</h2>
+<li>1-Git Clone</li>
+<li>2- Cd backend</li>
+<li>3- npm install</li>
+<li>4- criar .env</li>
+<li>5 - npm run migrations</li>
+<li>6 -npm run dev</li>
 
-Endpoints
-1- getProducts
-Método:GET
-Path: /products
-Output: Array de produtos
+<h2>Endpoints</h2>
+<h3> getProducts</h3>
+<p>Método:GET</p>
+<p>Path: /products</p>
+<p>Output: Array de produtos</p>
 
-2-postProducts
-Método: POST
-Path:/products
-Output:{id,
+<h3>postProducts</h3>
+<p>Método: POST</p>
+<p>Path:/products</p>
+<p>Output:{id,</p>
        name,
        delivery_date,
        products_list[]}
