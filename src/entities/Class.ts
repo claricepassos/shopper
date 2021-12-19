@@ -16,7 +16,6 @@ export interface Order {
 export interface Products_list{
   product_quantity: number,
   products_id: string,
-  //order_id: string 
 }
 
 export interface OrderInput{
