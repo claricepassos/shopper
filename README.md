@@ -1,19 +1,19 @@
-# Título do projeto
+# Seleção Desenvolvedor Full-Stack Shopper
 
-Back-End Seleção Desenvolvedor Full-Stack Shopper
+## Back-End 
 
 ## 🚀 Começando
 
-git clone
-cd shopper && npm install && npm run start para instalar todas as dependencias
-criar .env com as suas informações
-run migrations
+### git clone
+### cd shopper && npm install && npm run start para instalar todas as dependencias
+### criar .env com as suas informações
+### run migrations
 
-👨🏽‍💻 Tech Stack
-Node.js
-Typescript
-Express
+## 👨🏽‍💻 Tech Stack
+### Node.js
+### Typescript
+### Express
 
-📝 Funcionalidades
-Procura todos os produtos
-Cria um pedido
+## 📝 Funcionalidades
+### Procura todos os produtos
+### Cria um pedido
