@@ -4,9 +4,7 @@ import { AddressInfo } from "net"
 import knex from "knex";
 import getProducts from './endpoints/getProducts';
 import OrderController from './controller/OrderController';
-//import postOrder from './endpoints/postOrder';
-//import postProductOrder from './endpoints/postProductOrder';
-//import postProductOrder from './endpoints/postProductOrder';
+
 
 const app: Express = express();
 
@@ -15,7 +13,6 @@ app.use(cors());
 
 app.get ('/products', getProducts)
 app.post ('/products', OrderController)
-//app.post ('/products/list', postProductOrder)
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {

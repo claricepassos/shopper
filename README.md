@@ -1,28 +1,13 @@
-<h1>Backend para seleção de desenvolvedor full-stack Shopper</h1>
-
-<h2>Como usar:</h2>
-<li>1-Git Clone</li>
-<li>2- Cd backend</li>
-<li>3- npm install</li>
-<li>4- criar .env</li>
-<li>5 - npm run migrations</li>
-<li>6 -npm run dev</li>
-
-<h2>Endpoints</h2>
-<h3> getProducts</h3>
-<p>Método:GET</p>
-<p>Path: /products</p>
-<p>Output: Array de produtos</p>
-
-<h3>postProducts</h3>
-<p>Método: POST</p>
-<p>Path:/products</p>
-<p>Output:{id,</p>
-       name,
-       delivery_date,
-       products_list[]}
-
-
-       
-      
-       
+1- O sistema deve ter um formulário de cadastro de pedidos
+2- O usuário deve entrar com Nome do Cliente, Data de Entrega e uma lista de compras
+3- A lista de compras é composta por um ou mais produtos e a quantidade solicitada para
+cada um deles.
+4- O usuário pode alterar a quantidade de itens já cadastrados ou excluir um item que ele
+não queira mais.
+5- A cada alteração na lista de compras o sistema deve calcular o valor total do pedido.
+6- Todas essas informações devem ser salvas em um banco de dados que você vai modelar.
+7- Cada pedido salvo deve debitar a quantidade do produto correspondente de seu estoque.
+8- O sistema deve alertar o usuário caso a quantidade solicitada não esteja disponível no
+estoque.
+9- O sistema também deve ter uma função para mostrar o estoque atual exibindo: Nome do
+produto e a quantidade em estoque.
