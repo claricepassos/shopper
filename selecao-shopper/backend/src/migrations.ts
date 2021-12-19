@@ -1,4 +1,4 @@
-import {connection} from './data/connections'
+import { connection } from './data/connections'
 
 connection
    .raw(`
@@ -19,8 +19,8 @@ connection
          product_quantity INT, 
          products_id VARCHAR(255),
          FOREIGN KEY (products_id) REFERENCES products(id),
-  /*        order_id VARCHAR(255),
-         FOREIGN KEY (order_id) REFERENCES client_order(id) */
+         order_id VARCHAR(255),
+         FOREIGN KEY (order_id) REFERENCES order(id) 
 
       );
    `)
