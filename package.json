@@ -12,7 +12,7 @@
     "start": "tsc && node ./build/index.js",
     "dev": "ts-node-dev ./src/index.ts",
     "migrations": "ts-node-dev ./src/migrations.ts"
-    },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
