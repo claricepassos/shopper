@@ -3,20 +3,18 @@
   "version": "1.0.0",
   "description": "backend para seleção de dev full stack shopper",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "6.14.15"
   },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node ./build/src/index.js",
+    "start": "tsc && node ./build/index.js",
     "dev": "ts-node-dev ./src/index.ts",
     "migrations": "ts-node-dev ./src/migrations.ts"
-  },
+    },
   "keywords": [],
   "author": "",
-  
-
-  
   "license": "ISC",
   "dependencies": {
     "@types/knex": "^0.16.1",
@@ -32,5 +30,4 @@
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.2"
   }
-  
 }
